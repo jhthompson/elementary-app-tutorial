@@ -13,7 +13,7 @@ executable(
 
 # install our .desktop file so the Applications Menu will see it
 install_data(
-  join_paths('data', meso.project_name() + '.desktop'),
+  join_paths('data', meson.project_name() + '.desktop'),
   install_dir: join_paths(get_option('datadir'), 'applications')
 )
 
