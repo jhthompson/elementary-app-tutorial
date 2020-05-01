@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Hello Again
-GenericName=Hello World App
+Name=Testing Notifications
+GenericName=Testing Notifications to prove I can do it
 Comment=Proves that we can use Vala and Gtk
 Categories=Utility;Education;
 Exec=com.github.jhthompson.elementary-app-tutorial

@@ -35,15 +35,30 @@ public class MyApp : Gtk.Application {
 
     var title_label = new Gtk.Label (_("Notifications"));
     var show_button = new Gtk.Button.with_label(_("Show"));
+    var replace_button = new Gtk.Button.with_label(_("Replace"));
 
     var grid = new Gtk.Grid();
     grid.orientation = Gtk.Orientation.VERTICAL;
     grid.row_spacing = 6;
+
     grid.add(title_label);
     grid.add(show_button);
+    grid.add(replace_button);
+
+    replace_button.clicked.connect(() => {
+        var icon = new GLib.ThemedIcon("dialog-warning");
+        var notification = new Notification(_("Hello Again Notification"));
+        notification.set_body(_("This is my second body"));
+        notification.set_icon(icon);
+        //  notification.set_priority(NotificationPriority.URGENT);
+
+        send_notification("com.github.jhthompson.elementary-app-tutorial", notification);
+    });
 
     show_button.clicked.connect(() => {
-        var notification = new Notification(_("Hello World"));
+        var notification = new Notification(_("Hello World OG NOTIFICATION"));
+        var icon = new GLib.ThemedIcon("dialog-warning");
+        notification.set_icon(icon);
         notification.set_body(_("This is my first notification"));
 
         send_notification("com.github.jhthompson.elementary-app-tutorial", notification);
@@ -52,7 +67,6 @@ public class MyApp : Gtk.Application {
     main_window.add(grid);
     main_window.show_all();
   }
-  
 
   public static int main(string [] args) {
     var app = new MyApp();
