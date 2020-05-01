@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.github.jhthompson.elementary-app-tutorial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-29 23:18-0300\n"
+"POT-Creation-Date: 2020-04-30 22:04-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/Application.vala:31
-msgid "Hello again world!"
+#: src/Application.vala:34
+msgid "Notification Test"
 msgstr ""
 
-#: src/Application.vala:35
-msgid "Hello (again) world"
+#: src/Application.vala:36
+msgid "Notifications"
+msgstr ""
+
+#: src/Application.vala:37
+msgid "Show"
 msgstr ""
 
 #: data/com.github.jhthompson.elementary-app-tutorial.desktop.in:3
@@ -41,7 +45,7 @@ msgstr ""
 msgid "application-default-icon"
 msgstr ""
 
-#: data/com.github.jhthompson.elementary-app-tutorial.desktop.in:10
+#: data/com.github.jhthompson.elementary-app-tutorial.desktop.in:11
 msgid "Hello;World;Example"
 msgstr ""
 
